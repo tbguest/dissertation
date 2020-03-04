@@ -1,0 +1,112 @@
+\documentclass[12pt,timestamp]{ocethesis}
+% Required packages
+\usepackage{ocethesisbib}       % For bibliography
+%\usepackage{appendix}           % Otherwise cross references may fail
+\usepackage{setspace}           % For single-spacing of abstract
+\usepackage{graphicx}
+% Highly recommended packages
+\usepackage{times}              % Improve font over the default
+% Recommended packages
+\usepackage{amsmath}            % Has more symbols
+\usepackage{color}              % In case you use coloured text
+\usepackage{longtable}          % Use this to get long tables
+\usepackage{rotating}           % Use this if you have rotated figures
+\usepackage{subfigure}          % Use this if you want sub-figures
+\usepackage{microtype}          % Subtly improves word spacing
+\usepackage{footnote} % added for tables
+
+% i added - for landscape table
+\usepackage{pdflscape}
+%\usepackage{adjustbox}
+
+% added for footnotes
+%\usepackage{biblatex}
+%\usepackage{bibentry}
+\usepackage[hang,flushmargin]{footmisc}
+
+\parindent=1em                  % Set any value you like
+
+\raggedbottom                   % Prevents large inter-para spacing
+
+%\graphicspath {{figures/}}
+%\graphicspath {{figures\}}
+
+%% Below are some macros that could prove useful; uncomment any
+%% that might seem to be useful.
+%\newcommand{\fixme}[1]{\color{red}$<$#1$>$\color{black}}
+
+\begin{document}
+
+%\msc % or 
+\phd
+\title{Morpho-sedimentary dynamics of a megatidal, mixed sand-gravel beach}
+\author{Tristan Guest}
+%20150328 \supervisor{(Insert supervisor name here)}
+%20150328 %\supervisor{(Insert co-supervisor name here)}
+%20150328 %\examiner{(Insert external examiner's name here)} % comment out if there was no ext. examiner
+%20150328 \firstreader{(Insert first reader's name here)}
+%20150328 \secondreader{(Insert second reader's name here)}
+%20150328 \thirdreader{(Insert third reader's name here)}
+%20150328 \fourthreader{(Insert fourth reader's name here)}
+\university{Dalhousie University}
+\dept{Department of Oceanography}
+
+\defenceday{15}
+\defencemonth{April}
+\defenceyear{2020}
+\convocation{May}{2020}
+
+% FRONT MATTER
+%\dedicate{to wierd and wonderful Chaos}
+\dedicate{to the dog who is wagged by her tail}
+
+\frontmatter
+
+\input{abstract}
+
+\input{symbols}
+
+%\printglossary
+
+\input{acknowledgment}
+% parallels between this and gestaltism, the thinking of Doug Hofstadter
+% grateful to have been able to spend this time delving into such intersting problems
+
+
+% CHAPTERS
+\mainmatter
+
+\include{chapters/Introduction}
+
+\include{chapters/Background}
+
+\include{chapters/StudySite}
+
+\include{chapters/PorePressure}
+
+\include{chapters/CuspDynamics}
+
+\include{chapters/MSDBeach}
+
+\include{chapters/MSDSwash}
+
+\include{chapters/Conclusions}
+
+
+% APPENDICES
+% If there are no appendices, remove the \appendix line as well as the \include.
+\appendix
+
+\include{chapters/appendix1}\label{Appendix1}
+
+\include{chapters/appendix2}\label{Appendix2}
+
+
+% BIBLIOGRAPHY
+\bibliographystyle{ocethesis}
+
+%\bibliography{/home/tristan2/Documents/Tristan/code/Latex/bib/biblio_full_TG}
+\bibliography{C:/School/Tristan/code/Latex/bib/biblio_full_TG}
+%\bibliography{D:/biblio_full_TG}
+
+\end{document}

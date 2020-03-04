@@ -1,0 +1,56 @@
+\chapter{\label{a:A1}Approximate solution to the \cite{Yamamoto_etal1978} pressure equation}
+
+%\section{Approximate Solution}\label{A1}
+
+Additional relations among the parameters in the Yamamoto et al. model are:
+
+\begin{equation}\label{eq:A1}
+\omega' = a \omega,
+\end{equation}
+
+\begin{equation}\label{eq:A2}
+a = \frac{\gamma}{k_c}\bigg[n\beta' + \frac{1-2\nu}{2(1-\nu)G}\bigg],
+\end{equation}
+
+\begin{equation}\label{eq:A3}
+\omega'' = \kappa(\omega'/\tilde{k}^2),
+\end{equation}
+
+\begin{equation}\label{eq:A4}
+\kappa = (1-\nu)/(1-2\nu),
+\end{equation}
+
+\begin{equation}\label{eq:A5}
+\tilde{k}'' = (\tilde{k}'-\tilde{k})/\tilde{k}.
+\end{equation}
+
+Equation (\ref{eq:wavenum_p}) can be rewritten as
+
+\begin{equation}\label{eq:A6}
+\tilde{k}' = \tilde{k}\Big\{1 + \frac{i\omega a}{\tilde{k}^2}\Big\}^{1/2},
+\end{equation}
+
+\noindent with $a \simeq 2.9$ using parameter values within our best-fit regime: $\gamma \simeq 10^{4}$ kg m$^{-2}$ s$^{-2}$, $k_c=7.6\times10^{-4}$ m s$^{-1}$, $n=0.22$, $\beta'\simeq 10^{-6}$, $\nu=0.33$, and $G=4\times10^{8}$ Pa. The coefficient of $i$ in (\ref{eq:A6}), with $\omega/\tilde{k}=c=(gh)^{1/2}\simeq 3$ m s$^{-1}$ the phase speed of 0.1 Hz waves in $\approx$ 1 m water depth, is approximately 45. This value being much greater than 1, and the argument of $1 + i\omega a/\tilde{k}^2$ therefore being $\simeq\pi/2$, yield the approximation
+
+\begin{equation}\label{eq:A6simp}
+\tilde{k}' \simeq (a\omega)^{1/2}\exp(i\pi/4).
+\end{equation}
+
+\noindent Note that the $\pi/4$ value of the argument of $\tilde{k}'$ in equation (\ref{eq:A6simp}) is consistent with the nearly equal real and imaginary parts from the full solution in Figure \ref{fig:wavenumber}. Furthermore, since $m$ $\simeq$ 200 $>>$ 0, the first term in equation (\ref{eq:p}) drops out and the solution obtained using the simplified $p$ equation (\ref{eq:p_simp}) applies, with $\tilde{k}'$ given by equation (\ref{eq:A6simp}). This is essentially the Yamamoto et al. result for $G\beta'>>0$. While the results from the full system equations are plotted in Figure \ref{fig:seddep_all}, those from the approximate equations are visually indistinguishable from the full solution at this scale.
+
+With the e-folding scale with sediment depth, $\tilde{k}'$, fixed by the observations (i.e. for fixed $a$ and $\omega$), we can differentiate $\beta'$ in equation (\ref{eq:A2}) with respect to $k_c$ to obtain
+
+\begin{equation}\label{eq:A9}
+\frac{d\beta'}{dk_c} = a/(\gamma n),
+\end{equation}
+
+\noindent or, expanding $\beta'$ = $\beta'(S)$, we have
+
+\begin{equation}\label{eq:A10}
+\frac{dS}{dk_c} \simeq -P a/(\gamma n) < 0,
+\end{equation}
+
+\noindent since $P$, $a$, $\gamma$, and $n$ are positive.
+
+
+%\section{Equation for $dS/dh$}\label{A2}

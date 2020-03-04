@@ -1,0 +1,357 @@
+\chapter{Vertical structure of pore pressure under surface gravity waves on a steep, megatidal, mixed sand-gravel-cobble beach}\label{Chapter:PorePressure}
+
+%\begin{abstract}
+
+%\section*{Abstract}
+%
+%\addcontentsline{toc}{section}{Abstract}
+%	
+%The vertical structure of surface gravity wave-induced pore pressure is investigated within the intertidal zone of a natural, steeply sloping, megatidal, mixed sand-gravel-cobble beach. Results from a coherent vertical array of buried pore pressure sensors are presented in terms of signal phase lag and attenuation as functions of oscillatory forcing frequency and burial depth. Comparison of the observations with the predictions of a theoretical poro-elastic bed response model indicates that the large observed phase lags and attenuation are attributable to interstitial trapped air. In addition to the dependence on entrapped air volume, the pore pressure phase and attenuation are shown to be sensitive to the hydraulic conductivity of the sediment, to the changing mean water depth during the tidal cycle, and to the redistribution/rearrangement of beach face material by energetic wave action during storm events. The latter result indicates that the effects on pore pressure of sediment column disturbance during instrument burial can persist for days to weeks, depending upon wave forcing conditions. Taken together, these results raise serious questions as to the practicality of using pore pressure measurements to estimate the kinematic properties of surface gravity waves on steep, mixed sand-gravel beaches.
+%
+%%\end{abstract}
+
+This chapter was first published in the \textit{Journal of Geophysical Research: Oceans}\footnote{\textbf{Guest, T. B.}, and A. E. Hay, Vertical structure of pore pressure under surface gravity waves on a steep, megatidal, mixed sand-gravel-cobble beach, \textit{Journal of Geophysical Research: Oceans}, 122, 153–170, 2017.}.
+
+\section{Introduction}\label{ch1:Introduction}
+
+In sandy, wave-forced nearshore environments, synchronous measurements with multiple pressure and velocity sensors arranged in along- and/or across-shore arrays enable determination of essential characteristics of the nearshore incident and forced wavefield, including e.g., resolving shoreline-trapped modes via wavenumber-frequency and wave-directional spectra \citep[e.g.,][]{Huntley_etal1981, OltmanShay_Guza1987}. Direct measurement of \textit{in situ} hydrodynamics in the surf and swash zones of steep mixed sand-gravel (MSG) beaches is challenging in comparison, owing to the high likelihood of instrument damage by impact from gravel to cobble-sized grains. With this factor as a contributor, and despite contemporary interest in MSG beaches arising from their acknowledged role as effective natural shoreline defences, our current understanding of hydrodynamic and sediment transport processes in these environments is limited \citep{Mason_Coates2001, Osborne2005}. The use of pressure sensors buried beneath the active sediment layer on the beach face represents a potential means of \textit{in situ} data collection while reducing the instrument vulnerability associated with above-bed deployment.
+
+It is well known \citep[e.g.,][]{Yamamoto_etal1978} that wave-induced pressure signals propagating vertically through a porous bed will in general experience frequency-dependent amplitude attenuation and phase shifting, the magnitudes of which are determined by elastic and fluid mechanical properties of the skeleton built from the solid particle phase and the interstitial fluid, respectively. Under certain conditions, i.e., pore pressure phase shift, the passage of a single wave trough can induce a vertical pressure gradient sufficiently large to overcome static gravitational equilibrium, leading to momentary sediment liquefaction, with implications for seabed stability \citep[e.g.,][]{Sakai_etal1992, Bonjean_etal2004, Mory_etal2007}. Based on the theory of three-dimensional consolidation of porous granular media put forward by \citet{Biot1941}, numerous models have been developed \citep[][and many more]{Putnam1949, Sleath1970, Massel1976, Madsen1978, Yamamoto_etal1978, Mei_Foda1981, Okusa1985}, incorporating varied assumptions concerning the compressibility of the bed and fluid, (an)isotropy, magnitude of strains, etc. For a comprehensive review of porous bed response models, the reader is referred to \citet{Jeng2003}. Many of these models have successfully reproduced the observed pressures in beds of various composition. For example, \citet{Sakai_etal1993} compared field observations of pore-pressure in a saturated bed of medium sand to the boundary layer theory of \citet{Mei_Foda1981}, and reported minimal attenuation and phase lag. \citet{Raubenheimer_etal1998} tested the ability to use measurements from a single pressure sensor buried in a beach consisting of fine sand to estimate wave height in the field. Using the \citet{Yamamoto_etal1978} model, their findings indicated that attenuation of pore-pressure signals with burial depth was independent of their sediment properties, and that phase shifts were negligible. \citet{PedrozoAcuna_etal2008} compared predictions from the Yamamoto model to observed pore pressure amplitudes within a gravel beach in a laboratory wave flume, with no phase lag values reported. \citet{Michallet_etal2009} observed large pore pressure attenuation and phase lags with sediment depth in front of a large concrete structure in the intertidal zone of medium sand beach. Their results indicated that conditions conducive to wave-induced momentary liquefaction were often reached, and comparison with the model presented by \citet{Sakai_etal1992} was consistent with interstitial trapped air as a key parameter affecting the transmission of pressure within the sediment.
+
+The studies summarised above present results from laboratory investigations \citep[e.g.,][gravel beach]{PedrozoAcuna_etal2008} and meso- to macrotidal beaches consisting of fine to medium sand (e.g., \citet{Raubenheimer_etal1998}, 2-2.5 m tidal ranges, fine sand; \citet{Michallet_etal2009}, \textit{ca}. 4 m tidal range, medium sand). In contrast to these studies, the present work considers the case of a megatidal (10-12 m range), steeply sloping, natural MSG beach environment. The objectives are twofold: (1) to characterise the depth dependence of the phase lag and attenuation of oscillatory pore water pressures induced by surface gravity waves and (2) to test the feasibility and potential challenges associated with using buried pressure sensors to estimate surface wave-field characteristics on steep MSG beaches.
+
+The paper is organised as follows: The basics of the theory and the Yamamoto model are outlined in Section \ref{ch1:Theory}, followed by a description of the experiment site, the instrumentation employed, and the analysis methods in Section \ref{ch1:Methods}. The results are presented in Section \ref{ch1:Results}, beginning with a summary of hydrodynamic conditions, pore-pressure attenuation, and phase results spanning the full experiment. Then the sediment depth dependence of the modeled pressure response is compared to observed pressure for a single tide. Discussion and conclusions follow in Sections \ref{ch1:Discussion} and \ref{ch1:Conclusions}.
+
+
+\section{Theory}\label{ch1:Theory}
+\citet{Biot1941} derived a system of linear, multi-phase, poro-elastic equations describing the flow of fluid through, and the elastic deformation of, a porous medium, based on the assumptions of (1) an isotropic soil skeleton, (2) linear, reversible (i.e., Hookean) stress-strain relations within the soil skeleton, (3) small strains, and (4) Darcian fluid flow. Based on the work of Biot, \citet{Yamamoto_etal1978} developed an analytic model treating the transmission of wave pressure signals through a porous bed. The Yamamoto model is considered to be quasi-static, owing to the assumption of small deformations in the medium, and no acceleration due to fluid and/or soil motion.
+
+For an infinitely deep seabed, the ratio of the amplitude of the oscillatory component of pore pressure, $p(z)$, at sediment depth $z$ (positive downward, with $z = 0$ at the sediment-water interface) to that at the bed surface, $p_0$, is given by \citep{Yamamoto_etal1978}
+
+%\added{$=$ $\hat{p}(0)\exp(i\tilde{k}x-\omega t)$}
+
+\begin{equation}
+\frac{p(z)}{p_{0}} = \Big[1 - \frac{im\omega''}{-\tilde{k}'' + i(1 + m)\omega''}\Big]\exp(-\tilde{k} z) + \frac{im\omega''}{-\tilde{k}'' + i(1 + m)\omega''}\exp(-\tilde{k}' z),
+\label{eq:p}
+\end{equation}
+
+\noindent where $\omega$ and $\tilde{k}$ are the radian frequency and wavenumber of the surface gravity waves in the overlying fluid, and satisfy the linear dispersion relation $\omega^2=g\tilde{k}\tanh (\tilde{k} h)$, with $h$ the water depth. The parameters $m$, $\omega''$, $\tilde{k}'$, and $\tilde{k}''$, defined below and in Appendix A, are functions of the sediment porosity $n$, hydraulic conductivity $k_{c}$ (sometimes referred to as the coefficient of permeability), the shear modulus $G$ of the porous matrix, Poisson's ratio $\nu$, and the effective compressibility $\beta'$ of the pore fluid.
+
+If the pore fluid is free of air, $\beta'$ is equal to the compressibility of water $\beta$. If the pore fluid contains trapped air bubbles, $\beta'$ is significantly increased, and is related to $\beta$ by
+
+\begin{equation}\label{eq:beta}
+\beta' = S\beta + \frac{1-S}{P},
+\end{equation}
+
+\noindent where $S=S(z)$ is the degree of saturation and $P=P(z)$ is the absolute pore-water pressure. Equation (\ref{eq:beta}) is readily derived from first principles, assuming the ideal gas law for isothermal conditions -- giving $\beta_a$ = $1/P$ for the bulk compressibility of air -- and conservation of volume. $P$ is here given by
+
+\begin{equation}\label{eq:abs_p}
+P(z) = \rho g(h+z)+P_{a},
+\end{equation}
+
+\noindent where $h$ is the mean local water depth, and $P_{a}$ is atmospheric pressure. In our implementation, both $S$ and $P$ vary in accordance with the ideal gas law for isothermal conditions, applicable to spherical bubbles smaller than 1.2 cm diameter \citep[][ p.178]{Leighton1994}. We note that the factor $S$ in the first term on the right hand side of equation (\ref{eq:beta}) is missing from equation 2.2 in Yamamoto et al., but is clearly required since the bulk compressibility of water cannot affect that of the pore fluid when $S$ = 0.
+
+The weighting of terms in equation (\ref{eq:p}) is determined by the parameter $m$, given by
+
+\begin{equation}\label{eq:m}
+m = \frac{nG\beta'}{1 - 2\nu}.
+\end{equation}
+
+\noindent The product $G\beta'$ indicates the stiffness of the porous matrix relative to the pore fluid. In the limit $G\beta' \rightarrow 0$, the case for fully saturated sands and gravels, $m \rightarrow 0$ and equation (\ref{eq:p}) becomes
+
+\begin{equation}\label{eq:exp}
+\frac{p(z)}{p_{0}} = \exp(-\tilde{k} z).
+\end{equation}
+
+\noindent The pressure signal at depth in the sediment is in phase with that at the sediment water interface, and the exponential decay of the amplitude with depth is independent of the mechanical properties of the soil. This is the case which \citet{Raubenheimer_etal1998} found to be consistent with their measurements in the surf and swash zones of two sandy beaches with \textit{ca}. 2--2.5 m tidal ranges and 1:20 to 1:30 beach slope.
+
+For the case of $G\beta'>>0$, $m\neq0$ and a second vertical scale is introduced, given by
+
+\begin{equation}\label{eq:wavenum_p}
+\tilde{k}'(z) = \tilde{k}\Big\{1 + \frac{i\gamma \omega}{k_c \tilde{k}^2}\Big[n\beta' + \frac{1 - 2\nu}{2(1 - \nu)G}\Big]\Big\}^{1/2},
+\end{equation}
+
+\noindent where $\gamma$ is the unit weight of the pore fluid. The phase lag at depth differs from that at the bed surface and attenuation at depth is increased, owing primarily to the effective compressibility of the fluid (i.e., the degree of saturation). Decreasing the saturation leads to an increase in the magnitude of the complex wavenumber $\tilde{k}'$ (Fig. \ref{fig:wavenumber}) and the phase difference. Simplifications to equation (\ref{eq:wavenum_p}) are presented in Appendix A for the set of parameter values specific to the study site introduced in Section \ref{subsec:model}, allowing a more straightforward interpretation of the influence of $\tilde{k}'$ on the pore pressure response.
+
+\begin{figure} % Yamamoto_v2.m
+\begin{center}
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_f01.png}
+	\caption[Theoretical wavenumber ratios as functions of saturation]{The ratio of radian wavenumbers $\tilde{k}'$ (equation (\ref{eq:wavenum_p})) to $\tilde{k}$ (the surface gravity wavenumber determined using the linear wave dispersion relation) is plotted versus saturation $S$ for the (a) real and (b) imaginary components of $\tilde{k}'$. $\tilde{k}'$ $>>$ $\tilde{k}$ when $S$ $<$ 1, leading to the presence of a phase lag and greater attenuation. When $S$ $\rightarrow$ 1, $\tilde{k}'$ $\rightarrow$ $\tilde{k}$ and the full solution, equation (\ref{eq:p}), is reduced to the exponential result, equation (\ref{eq:exp}).}
+	\label{fig:wavenumber}
+\end{center}
+\end{figure}
+
+When $m>>0$ (e.g., unsaturated sands and gravels), equation (\ref{eq:p}) can be approximated by 
+
+\begin{equation}\label{eq:p_simp}
+\frac{p(z)}{p_{0}} = \exp(-\tilde{k}' z).
+\end{equation}
+
+\noindent In the case of partial saturation, mechanical properties of the porous medium must be considered by employing the full analytical solution (\ref{eq:p}), or the approximation (\ref{eq:p_simp}). 
+
+\begin{figure} % Adv2015_PressureStack_plotting.m
+\begin{center}	
+		\noindent\includegraphics[width=0.6\columnwidth]{figures/chapter1/porepressure_modelprofile_alteredeqns.png}
+	\caption[Modeled pressure variance ratio and phase with sediment depth]{Modeled profiles of (a) pressure variance ratio and (b) phase lag, with input parameter values representative of Advocate Beach sediments ($S(z=0)$ $=$ 0.9, $k_{c}$ $=$ 7.6$\times10^{-4}$ m s$^{-1}$).}
+	\label{fig:model_5m}
+\end{center}
+\end{figure}
+
+
+Model output from equations (\ref{eq:p}) and (\ref{eq:exp}) is shown in Fig. \ref{fig:model_5m}, with input parameter values set to be representative of the field site introduced in Section \ref{subsec:model}. Though the pore-pressure phase lags modeled by equation (\ref{eq:p}) continue increasing with sediment depth, the signals are almost entirely attenuated within $O(1$ m$)$ below the beach surface.
+
+
+\section{Methods}\label{ch1:Methods}
+
+\subsection{Field Site}\label{subsec:Site}
+
+\begin{figure} % Adv2015_PressureStack_plotting_full.m
+		\noindent\includegraphics[width=\columnwidth]{figures/chapter1/2016JC012257_p03.png}
+	\caption[Advocate Beach site map and aerial photo]{(a) Map indicating the location of Advocate Beach, near the head of the Bay of Fundy, Canada. (b) Image of Advocate Beach taken near the high tide mark at low tide, in the presence of well organised cusps. (c) Aerial view of Advocate Beach. The array location is indicated by the red dot.}
+	\label{fig:Adv}
+\end{figure}
+
+In this study, measurements from a vertical array of buried pressure sensors are used to determine the dependence of signal phase and attenuation in the sea and swell bands on sediment depth at Advocate Beach, Nova Scotia, Canada -- a coarse-grained, megatidal (10-12 m range) barrier beach located near the head of the Bay of Fundy (Fig. \ref{fig:Adv}). Megatidal beaches, as defined by \citet{Levoy_etal2000}, have spring tidal ranges exceeding 8 m. The field experiment was undertaken between 21 September and 9 October (i.e., yeardays 264-282) 2015, and was initially motivated by questions related to possible phase-shifting effects of Advocate Beach sediments on wave pressure signals. The beach face sediments range from medium sand to $>$ 20 cm diameter cobbles, well-mixed both across-shore and at depth. The steep ($\approx 1:10$) slope and mixed-size, poorly sorted sediment identify Advocate as a mixed sand and gravel (MSG) beach under the field-based classification scheme proposed by \citet{Jennings_Shulmeister2002}. The beach is 5 km long and has a nearly linear shoreline, separating the headlands of Cape Chignecto to the west, and Cape D'Or to the southeast. The beach face is exposed to the full 500 km fetch of the Bay of Fundy and adjacent Gulf of Maine. At low tide, the beach face is uniformly planar and the intertidal zone up to 100 m wide during spring tides \citep[see][]{Taylor_etal1985, Hay_etal2014}. From the lower beach face to beneath lowest low water, the beach composition transitions to cobble and boulder-sized material. Well-sorted beach cusps are often seen to form on the upper beach, with cusp horns typically composed of loose gravel and cobbles, and fine material in the embayments. Sediment sorting has also been observed to follow energetic wave events in the form of widespread fining of the surficial material \citep{Hay_etal2014}. During storms, peak incident wave periods typically fall within the wind-wave band ($T_p$ = 5.5-6 seconds), with longer period swell usually limited to the weaker wave forcing conditions between storms. The combination of a steep beach slope and typically short period, wind-generated incident waves in the Bay of Fundy result in a highly energetic shore break for significant wave heights of \textit{ca}. 0.5 m and larger \citep{Hay_etal2014}.
+
+Results from earlier field deployments (2012, 2013) at Advocate Beach are presented in \citet{Hay_etal2014}, \citet{Stark_Hay2014}, \citet{Stark_etal2014}, and \citet{Wilson_etal2014}. The reader is referred to these articles for further site characterisation and observations of sediment and hydrodynamics.
+
+
+\subsection{Measurements}\label{subsec:Measurements}
+
+\begin{figure} % Adv2015_zline_beachslope.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p04.png}
+	\caption[Beach profile and buried pressure sensor locations]{Left: Cross-shore profile of Advocate Beach on yearday 271, 2015. Pressure sensor positions are indicated by blue dots, with the vertical pressure sensor array identified near mid-beach. Highest high and lowest low water during spring and neap tides during the experiment are indicated with dashed lines. Right: A schematic of the vertical array.}
+	\label{fig:Profile}
+\end{figure}
+
+Pore-pressure was measured using a vertical array of four MS5803-14BA high resolution (0.02 kPa) pressure sensors, at 0, 15, 30, and 50 cm sediment depth and near the mid-tide level on the beach face (Fig. \ref{fig:Profile}). Each sensor was secured in an acrylic housing, the openings of which were covered in aluminum mesh to prevent the mechanical force of sand grains from impinging on the sensing surface. The array was installed on yearday 265, and operated from yearday 266 -- 281. Data were sampled at a mean rate of 50 Hz, then resampled at 20 Hz for analysis. Resampling was necessary to ensure a uniformly sampled time vector, and 20 Hz provided ample spectral frequency resolution (0.0098 Hz with a window width of 2048) for our purposes. Two BeagleBone Black single-board computers were used for data logging. The BeagleBones were linked via Ethernet and synchronised using Precision Time Protocol (PTP) via a junction box at the top of the berm. Power was supplied from a chalet behind the dune crest. Two of the four sensors ($z = 0$ cm [beach surface], $z = 30$ cm) failed near high tide during the first data collection cycle as a result of seawater intrusion at the cable connection points, yielding a limited record length of approximately 2 hours over which to perform the desired analysis with the full array. The remaining two sensors ($z = 15$ cm, $z = 50$ cm) operated throughout the experiment (29 tidal cycles). Water depth $h$ was determined using the deepest sensor. The uppermost sensor ($z = 0$ cm) was visible at the beach surface at low tides throughout the experiment, with the exception of a 2-3 day period of burial which occurred during low amplitude, long period swell on yeardays 277-280. Additional pressure measurements for monitoring incident wave conditions were made using an internally logging RBR Duo, deployed on an above-bed frame near lowest low water, sampling continuously at 6 Hz between yeardays 267 and 281.
+
+Beach surveys were carried out at each daylight low tide using a cart-mounted Hemisphere Model S320 RTK (real time kinematic) GPS. A typical beach profile is shown in Fig. \ref{fig:Profile}.
+
+Relevant sediment properties were obtained from samples collected at five depth increments (0-5, 5-15, 15-25, 25-35, and 35-50 cm), 1 m from the location of the vertical array on yearday 277. To collect the samples, a pit was dug, with one of its walls carefully maintained as a vertical face. Samples were collected from the top down, in a column, with care taken to ensure that material for each sample was taken only from within the pre-determined depth increment. Grain size distributions were obtained following the method of \citet{Ingram1971}. Grains with diameter $D > 16$ mm were removed from the samples prior to carrying out the measurements of sediment porosity, $n$, and hydraulic conductivity, $k_{c}$. Porosity was estimated volumetrically using a 1 L graduated cylinder. Distilled water was added first, to prevent the entrainment of air bubbles in the sediment, which was then added in 6-9 250 g (approx.) increments with displaced water volume and bulk sample volume noted at each addition. The mean value and standard deviation of $n$ were then obtained via linear regression, and the result corrected to account for the volume of gravel and cobbles removed ($n[D>16$ mm$] = 0$). The hydraulic conductivity of each sample was estimated with a permeameter using the constant head method outlined in \citet{Craig1974}. Each sample was added incrementally to the water-filled permeameter cell (7.6 cm diameter), to prevent both air entrainment and grain size-segregation. Three successive measurements -- with the sample removed and reintroduced each time -- were used to estimate the mean and standard deviation of $k_{c}$ for each depth bin. No correction was made for the omitted large size fractions.
+
+\begin{table}
+	\caption[Measured sediment porosity and hydraulic conductivity with sediment depth]{Measured porosity, $n$, and hydraulic conductivity, $k_{c}$. Measurements were made in the laboratory on samples collected in the 5 depth intervals indicated, with the coarse fraction ($D$ $>$ 16 mm) removed. The porosity was corrected to account for the coarse fractions by assuming $n[D>16$ mm$]=0$.}
+	\label{tbl:n}
+	\centering
+	\begin{tabular}{ccccc}
+		\hline
+		depth, $z$ (cm) & $n$ (corrected) & $n$ (fines) & $k_{c}$ (10$^{-4}$ m s$^{-1}$)\\
+		\hline
+		0--5 & 0.305 $\pm$ 0.008 & 0.335 $\pm$ 0.008 & 11.257 $\pm$ 0.442\\
+		5--15 & 0.259 $\pm$ 0.009 & 0.295 $\pm$ 0.007 & 7.930 $\pm$ 0.435\\
+		15--25 & 0.230 $\pm$ 0.006 & 0.284 $\pm$ 0.005 & 7.392 $\pm$ 0.105\\
+		25--35$^{*}$ & 0.150 $\pm$ 0.006 & 0.208 $\pm$ 0.003 & 5.396 $\pm$ 0.089\\
+		35--50 & 0.194 $\pm$ 0.006 & 0.248 $\pm$ 0.002 & 7.613 $\pm$ 0.074\\
+		\hline
+		depth average  & 0.217 $\pm$ 0.053 & 0.265 $\pm$ 0.043 & 7.553 $\pm$ 1.709\\
+		\hline
+		\multicolumn{4}{l}{$^{*}$Computed for $D<22.4$ mm due to a higher percentage of coarse material.}
+	\end{tabular}
+\end{table}
+
+\begin{figure} % Advocate_soilstats.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p05.png}
+	\caption[Grain size distribution, porosity, and hydraulic conductivity with sediment depth]{Advocate Beach sediment properties. (a) Bulk grain size distributions from yearday 277 (during the experiment) and yearday 185 (an earlier test deployment). (b) Size distributions at 5 depth bins $\approx$ 1 m from the array location (samples collected on yearday 277). (c) Porosity $n$ associated with each depth bin, corrected to account for large size fractions (black) and for fine fractions only ($D$ $<$ 16 mm, red). (d) Hydraulic conductivity $k_{c}$ associated with each depth bin. Depth-averaged values in (c) and (d) are indicated by vertical lines, and the error bars indicate the standard deviation of the estimate at each depth.}
+	\label{fig:soilstats}
+\end{figure}
+
+
+
+Measurements of grain size, porosity, and hydraulic conductivity are presented in Fig. \ref{fig:soilstats}, with porosity and hydraulic conductivity measurements also summarised in Table \ref{tbl:n}. Note that both $n$ and $k_{c}$ tend to decrease with depth in the sediment. The porosity values reported here are comparable with those found by \citet{LopezSanRomanBlanco_etal2006}, who reported a starting porosity of approximately 0.2 for a 30:70\% sand:gravel mixture used in a laboratory wave flume experiment, with values varying between 0.2 and 0.4 as the mix ratio varied (on yearday 185, Advocate beach had a sand:gravel:cobble mix ratio of 35:58:7\%). Few measurements of the hydraulic conductivity of natural MSG beach sediments have been reported in the literature, however the values reported here fall within the range typical for a sand-gravel mixture -- roughly $10^{-1}$ to $10^{-4}$ m s$^{-1}$ \citep{Craig1974}.
+
+
+\subsection{Analysis}
+
+In keeping with previous work \citep [e.g.,][]{Raubenheimer_etal1998, Michallet_etal2009}, and for straightforward comparison of observed and modeled pressure results, pressure variance and spectral density ratios are used as metrics for quantifying attenuation. The theoretical prediction at a given frequency is given by $[(p(z)/p_{0})^{2}]$, hereafter written as $(p/p_{0})^{2}$, and is compared with the observed spectral ratio $S_{pp}(f, z)/S_{pp}(f, 0)$ (hereafter written as $S_{pp}/S_{pp,0}$). Variance attenuation is then given by the complement of these values, $[1 - (p/p_{0})^{2}]$ and $[1 - S_{pp}/S_{pp,0}]$, respectively. The observed phase lag, $\theta(z)$, was determined from the cross-spectrum of $p(z)$ and $p_0$, unless otherwise indicated.
+
+Owing to the large tidal range at this location, water depth changes rapidly on the rising and falling tide. Thus, spectral estimates were computed using detrended 12 minute records (maximum change of 0.6 metres mean water level), to assure quasi-stationarity. A Hanning window of length 2048 samples (102.4 seconds) was used, with 50\% overlap. The resulting spectra have a frequency resolution of 0.0098 Hz and 24 degrees of freedom.
+
+
+\section{Results}\label{ch1:Results}
+
+\subsection{Observed Forcing and Response}\label{subsec:Obs}
+
+\begin{figure} % Adv2015_PressureStack_plotting_full.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p06.png}
+	\caption[Wave and tide data from Advocate 2015 experiment]{Hydrodynamic conditions during the experiment, registered by the frame-mounted RBR Duo pressure sensor near lowest low water. (a) Tidal elevation, $h_{0}$, with the relative level of the uppermost pressure sensor in the array indicated by the dashed red line. (b) Significant wave height, computed as 4$\sigma_p$. (c) Peak wave period, $T_{p}$.}
+	\label{fig:Wstats}
+\end{figure}
+
+
+The hydrodynamic forcing conditions during the experiment are presented in Fig. \ref{fig:Wstats}. Periods of wave inactivity (yeardays 265-270 and 275-277), owing both to light winds and to winds from the N-NE (offshore), were interspersed with wind events from the SW, leading to the steep, locally generated wind and swell waves that are characteristic of the Bay of Fundy. The first, and largest, of the wind events lasted two days (yeardays 270-271) with peak significant wave heights approaching 1.5 m. Two other SW wind events occurred on yeardays 274 and 281. During the period from yearday 277 to 280, wave energy spectra were dominated by long period (\textgreater 15 seconds), low amplitude (0.05-0.15 m) swell waves generated by Hurricane Joaquin which passed well to the south of Nova Scotia. The mean peak period, computed for storms ($4\sigma_{p} > 0.15 $ m) and intervals between storms, was 7.6 seconds and 9.7 seconds, respectively. Mean peak wave periods measured during two previous studies were 5.5-6 seconds \citep[e.g.,][]{Hay_etal2014}.
+
+\begin{figure} % Adv2015_PressureStack_plotting.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p07.png}
+	\caption[Pore pressure time series and energy spectra]{Pressure time series (a) and energy spectra (b) at the four sensor burial depths for $h=50$ cm on yearday 266. A decrease in spectral pore-pressure ratios (c) across much of the gravity wave band indicates frequency-dependent attenuation. The subscripts in the legend in (c) indicate sediment depth in cm.}
+	\label{fig:ts_Spp}
+\end{figure}
+
+\begin{figure} % Adv2015_PressureStack_yd266.m
+\begin{center}	
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_p08.png}
+	\caption[Pore pressure coherence and phase versus frequency]{Coherence (a) and phase (b) of the deepest sensor ($z$ $=$ 0.5 m) relative to the bed surface sensor ($z = 0$ m) for mean local water depths $h = 0.5$ m and $h = 2.1$ m on yearday 266. The 95\% significance level is indicated with a dashed black line.}
+	\label{fig:coh}
+\end{center}	
+\end{figure}
+
+
+The data from the vertical array while all four sensors were functioning are presented in Fig. \ref{fig:ts_Spp}. Visual inspection of the four pressure fluctuation time series (Fig. \ref{fig:ts_Spp}a) indicates attenuation of the dominant wave signal with depth of burial in the sediment. The pressure records from the buried sensors also can be seen to lag the surface record increasingly with burial depth. Pressure spectra from the respective sensors (Fig. \ref{fig:ts_Spp}b) reflect the observed attenuation with depth, with variance ratios decreasing -- i.e., attenuation increasing -- with increasing frequency (Fig. \ref{fig:ts_Spp}c), consistent with past observations \citep[][etc.]{Yamamoto_etal1978, Raubenheimer_etal1998, PedrozoAcuna_etal2008}. Fig. \ref{fig:coh} shows the magnitude squared coherence of the signals, which was generally above the significance level (95\% confidence) for frequencies below 0.6 Hz at high tide, and up to 1 Hz in shallower water. Phase lags are also frequency dependent, with smaller lags at lower frequencies.
+
+\begin{figure} % Adv2015_PressureStack_plotting_full.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p09.png}
+	\caption[Significant wave height and pore pressure response]{(a) Time series of significant wave height, $4\sigma_{p}$, (b) pore pressure variance ratio, and (c) phase lag at $z$ $=$ 50 cm relative to $z$ $=$ 15 cm and $f$ $=$ 0.1 Hz, plotted versus mean local water depth $h$. Warmer colors denote later times. Attenuation and phase are maximal as $h$ approaches zero. Note the pronounced increases in attenuation and phase lag following the peak wave forcing associated with the first storm (second tide of yearday 270). Though the pressure sensor responsible for producing the data in (a) did not begin sampling until late in yearday 267, (b) and (c) include data from yearday 266 onward (darkest blue).}
+	\label{fig:full_Hsig}
+\end{figure}
+
+
+The pressure variance ratio and phase at sea and swell band frequencies are dependent on water depth, $h$, as well as changes to the beach state over the course of the experiment. An example is shown in Fig. \ref{fig:full_Hsig}, where the variance ratio and phase lag (at $f=0.1$ Hz) associated with signals from the two pressure sensors that functioned for the full experiment ($p_{50}$, relative to $p_{15}$, spanning 35 cm of sediment) are plotted versus mean local water depth. At a given frequency, the pressure variance ratio decreases with decreasing water depth, corresponding to higher attenuation for shallower water. Correspondingly, the phase lag increases as water depth decreases, so the phase lag is also higher for shallower water.
+
+\begin{figure} % plot_phase_fixed_h_and_z.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p10.png}
+	\caption[Sample pore pressure time series pre- and post-storm]{The oscillatory components of pore pressure measured at 15 cm (blue) and 50 cm (red) sediment depth are plotted, corresponding to (a) the first tide of yearday 269, prior to the first storm event of the experiment, and (b) the second tide of yearday 276, following the storm event. Mean local water depth is 2 m in both cases. Increased attenuation and phase shifting of the pressure signal are evident in the latter.}
+	\label{fig:ts_pre_post}
+\end{figure}
+
+A marked change in the relationship is seen to have occurred early in the experiment, in the form of a pronounced increase in both attenuation and phase lag of the pore-pressure signal during the second tide of yearday 270, relative to observations from the five preceding days. At 2 m water depth, for example, the average pore pressure variance ratio decreased from approximately 0.50 to 0.25, and the average phase increased from about 20 degrees to more than 40 degrees. These factor of two changes coincided with the arrival of a strong southwest wind event accompanied by 0.5 to 1 m significant wave heights. It is thought that the low wave energy conditions during the five days prior to this wave event were insufficient to re-consolidate the beach material disturbed during instrument burial. In Fig. \ref{fig:ts_pre_post}, time series recorded at 15 and 50 cm sediment depth are compared for periods before and after the storm event, with increased signal attenuation and phase lag evident in the latter. Additional variability corresponding to later wave events is reflected by the magnitude of difference in phase lag between successive tides, $|\Delta\theta|$, shown to vary in proportion to the significant wave height, $4\sigma_{p}$, in Fig. \ref{fig:delta_phase}. These findings are discussed further in Section \ref{Disc:kc}.
+
+\begin{figure} % plot_phase_fixed_h_and_z.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/2016JC012257_p11.png}
+	\caption[Significant wave height and pore pressure phase response]{Significant wave height, $4\sigma_{p}$, (a) is shown to correspond well with changes in phase lag (b and c) during the experiment for fixed frequency ($f$ $=$ 0.1 Hz), sediment depth (50 cm relative to 15 cm sediment depth), and water depth ($h$ $=$ 2 m). $|\Delta\theta|$ (c) denotes the magnitude of difference in phase lag between successive tides, computed as the difference in phase lag on a flood (ebb) tide from the previous flood (ebb) tide. Though the pressure sensor responsible for producing the data in (a) did not begin sampling until late in yearday 267, (b) and (c) include data from the end of yearday 266 onward.}
+	\label{fig:delta_phase}
+\end{figure}
+
+In Fig. \ref{fig:full_hdepth}, the pore pressure variance ratio and phase lag are plotted versus mean local water depth for three different frequencies, with the observations prior to the wind/wave event on yeardays 270-271 omitted. Thus, the effects of sediment disturbance due to instrument burial are not included, and the pore pressure transmission properties of the typical beach state are represented. The relationship between water depth and both the pore pressure variance ratio and phase lag is nearly linear over the observed range of water depths. Frequency dependence is also evident in both cases.
+
+\begin{figure} % Adv2015_PressureStack_plotting_full.m
+\begin{center}		
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_p12.png}
+	\caption[Pore pressure variance ratio and phase lag versus water depth]{Pressure variance ratio (a) and phase lag (b) between the pressure sensors at $z$ $=$ 15 cm and $z$ $=$ 50 cm for three frequencies, plotted versus mean local water depth for the period after yearday 271 (see Fig. \ref{fig:full_Hsig}). Frequency dependence is evident, with lower frequencies exhibiting smaller phase shifts and lower attenuation.}
+	\label{fig:full_hdepth}
+\end{center}	
+\end{figure}
+
+
+\subsection{Comparisons to the \citeauthor{Yamamoto_etal1978} Model}\label{subsec:model}
+
+Predictions of pore pressure attenuation and phase versus both sediment depth and frequency from the full analytical solution (\ref{eq:p}) are compared in Fig. \ref{fig:seddep_all} to observations from the full vertical array for the second tide of yearday 266. The observed values were computed for consecutive 12 minute segments of pressure data in order to account for the rapid variation in mean water level. The depth averaged values of $n=0.22$ ($\pm 0.05$ standard deviation) and $k_{c}=7.6\times 10^{-4}$ m s\textsuperscript{-1} ($\pm 1.7\times 10^{-4}$ m s\textsuperscript{-1} standard deviation), were used as model input. Poisson's ratio $\nu$ and the shear modulus $G$ were set at 0.3 and $4\times 10^{8}$ Pa, respectively, typical values for a sand and gravel mixture. The degree of saturation $S$ (varying with $z$ according to the isothermal ideal gas law), was adjusted to minimise the least-squares error between the predictions and observations. The best-fit values of $S$ ranged from 0.85--0.90 in 1--2 m of water depth, yielding values for the stiffness product $G\beta'$ between 320 at $h = 2.1$ m, $z = 0.5$ m and 520 at $h = 0.1$ m, $z = 0$ m. Recall from Section \ref{ch1:Theory} that when $G\beta'>>0$, the relative stiffness of the porous matrix exceeds that of the pore fluid, and the mechanical properties of the soil must be considered.
+
+
+\begin{figure} % Adv2015_PressureStack_plotting.m
+		\noindent\includegraphics[width=13.8cm]{figures/chapter1/porepressure_modelfit_alteredeqns.png}
+	\caption[Model fits to observed pore pressure response]{Observed and model-predicted pore pressure attenuation and phase at 0.1 Hz and 1.8 m water depth versus sediment depth [(a), (b)] and frequency [(c), (d)], with $S$($z$ = 0) $\simeq$ 0.9 and $k_c$ = 7.6 $\times$ 10$^{-4}$ m s$^{-1}$. The observations correspond to the last tide of yearday 266, when all 4 sensors in the vertical array were working.}
+	\label{fig:seddep_all}
+\end{figure}
+
+
+The model predicts the observations well both with sediment depth and frequency, with a relative RMS error generally less than 10\%. The $m=0$ limit (\ref{eq:exp}) accounts for only about 20\% of the observed variance attenuation with sediment depth for the case shown in Fig. \ref{fig:seddep_all}a, and, as expected, predicts zero phase lag with sediment depth (Fig. \ref{fig:seddep_all}b), quite unlike the observations. The frequency dependence of the pore pressure variance ratio and phase at each sediment depth, relative to the pressure at the bed, is shown in Figs. \ref{fig:seddep_all}c and d. The observed and model-predicted pressure ratio and phase exhibit very similar dependencies on forcing frequency and sediment depth.
+
+
+\begin{figure} % plot_bestfit_Sr_PorePressureJGR.m
+		\begin{center}	
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_p14.png}
+	%	\noindent\includegraphics[width=20pc]{Saturation_185_266.eps}
+	\caption[Best-fit saturation values: flood tide]{(a) Best-fit model-predicted estimates of the percent saturation $S_0$ at $z$ = 0 versus water depth $h$, for the measured hydraulic conductivity value, $k_{c1}$ = 7.6$\times10^{-4}$ m s$^{-1}$, with uncertainty region computed using $k_{c1}$ $\pm$1 standard deviation, and lower value, $k_{c2}$ = 1.5$\times10^{-4}$ m s$^{-1}$. Linear regressions are shown in black. (b) Peak incident wave frequency, $f_{p}$, used for the best-fit calculation, observed at the array on yearday 266. The available data are limited to flood tide of yearday 266. The data points are 12 min apart.} 
+	\label{fig:S}
+		\end{center}
+\end{figure}
+
+
+Best fit saturation values are plotted in Fig. \ref{fig:S} together with the forcing frequencies -- the peak frequency in the pressure spectrum for each data run -- used in the calculations. The saturation values shown are the best fit values at the bed surface ($z=0$), given by $S_{0}$, and are shown to increase linearly with increasing water depth. To demonstrate the sensitivity of the best fit value of $S_0$ to our choice of $k_{c}$, model predictions are shown using two different values of $k_c$: the measured, depth-averaged value ($k_{c1}=7.6\times10^{-4}$ m s$^{-1}$), for which the computed standard deviation allowed a quantification of uncertainty in $S_0$, and a reduced value ($k_{c2}=1.5\times10^{-4}$ m s$^{-1}$). The lower value yielded $O(10$\%$)$ higher saturations. With the decay scale $\tilde{k}'$ fixed by the observations, a continuum of best-fit solutions can be obtained, depending on the set value of $k_c$. It is true in general that for fixed $|\tilde{k}'|$ (and therefore $a$), when $k_c$ is decreased, $S$ must increase (see Appendix A).
+
+\begin{figure} % plot_bestfit_Sr_PorePressureJGR.m
+		\begin{center}	
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_p15.png}
+	%	\noindent\includegraphics[width=20pc]{Saturation_185_266.eps}
+	\caption[Best-fit saturation values: flood and ebb tides]{(a) Best-fit model-predicted estimates of the saturation $S_0$ at $z$ = 0 versus water depth $h$ from the flood tide (blue) and ebb tide (red) of an earlier test deployment (yearday 185), with $k_c$ = 1.5$\times10^{-4}$ m s$^{-1}$. A linear regression is shown in black. (b) Peak incident wave frequency, $f_{p}$, used for the best-fit calculation, observed at the array on during a previous test deployment (yearday 185). Limited knowledge of sediment mechanical parameter values for the test deployment make the reported saturation values themselves unreliable, however the approximately symmetric relationship about high tide is the result of interest from the yearday 185 test. The data points are 12 min apart.} 
+	\label{fig:S2}
+		\end{center}
+\end{figure}
+
+Observations are only available from the flood tide on yearday 266. However, we had carried out a test deployment several months earlier (yearday 185) with three sensors buried at 0, 25, and 50 cm sediment depth in order to test whether interstitial air might affect pore pressure at surface gravity wave frequencies in this environment. The results from this test are plotted in Fig. \ref{fig:S2}, and are relevant here because the data span both flood and ebb. Fig. \ref{fig:S2} includes an equivalent best-fit model analysis of the yearday 185 dataset using the same parameter values, and $k_{c}=k_{c2}$ (the lower value of the two stated above). We note that the choice of $k_c$ is arbitrary with respect to these data, as no observations of soil properties are available. However, the important result is that the best fit values for $S_0$ increase and decrease symmetrically about high tide -- indicating that air present in the pore spaces was not released with either the rising or falling tide. Also apparent from Fig. \ref{fig:S2} is that the change in best-fit value of $S$ with $h$ is independent of the time rate of change of $h$. This is important because, as both Figs. \ref{fig:S} and \ref{fig:S2} indicate, the rate of change of $h$ is very high -- about 3 m hr$^{-1}$ at mid-tide -- and decreases as the tide advances to values approaching zero at high tide. The linearity of the observed response persists throughout, however, indicating that the assumption of stationarity in the model -- i.e., constant absolute pore water pressure, $P(z)$ -- is not violated despite the very rapid changes in water level at mid-tide.
+
+
+\section{Discussion}\label{ch1:Discussion}
+
+\subsection{Comparison to Previous Results}\label{Disc:Comparison}
+
+Few studies have reported wave-resolved pore pressure measurements in a natural beach setting, especially with regard to the vertical structure of phase. In the only other field study to use a vertical array of buried pressure sensors to estimate characteristics of the surface wave field of which the authors are aware, \citet{Raubenheimer_etal1998} found that the mechanical properties of the sediment-water matrix were unimportant. The implication is that air inclusions were not present in the sediment at their sites: two gently sloping (roughly 1:30 slope) fine sand beaches with tidal ranges of 2-2.5 m. \citet{Michallet_etal2009} \citep[see also][]{Bonjean_etal2004, Mory_etal2007} observed pore pressure attenuation and phase shifting in medium sand in the intertidal zone of a macrotidal beach (4 m tidal range, roughly 1:16 slope), which they attributed to interstitial air inclusions, based on comparisons to the \citet{Sakai_etal1992} model and supported by direct observations of pore-trapped air using a geoendoscopic camera \citep[described by][]{Breul_Gourves2008}. The work of \citet{Michallet_etal2009} is the only other study -- that we have been able to find in the literature -- of field observations of vertical changes in pore pressure phase at surface gravity wave frequencies in a nearshore setting. However, their measurements were made on the face of a several-metre wide, partially buried, concrete World War II bunker. How the presence of this structure might have affected the measurements is not known.
+
+Though the sensitivity of pore pressure attenuation and phase to wave activity was also noted by \citet{Michallet_etal2009}, their results indicated a clear relationship between significant wave height and spectral ratio, with larger wave heights corresponding to larger observed spectral ratios (i.e., lesser attenuation), the implication being that bed erosion associated with heightened wave activity allowed pore-trapped air to escape. With the exception of a single event (see Section \ref{Disc:kc}), this finding is not apparent in our results. However, we acknowledge that our observations, made at depths of 15 and 50 cm in the sediment, do not take into account the uppermost 15 cm of the sediment column.
+
+The findings of \citet{Michallet_etal2009} indicated that the distribution of trapped air with depth in the sediment was not homogeneous, with saturation values nearing 1 both in the upper 10 cm of the sediment column and below 45 cm, with a saturation minimum at approximately 25 cm of sediment depth. The model-predicted pressure variance ratios and phase lags with sediment depth fit our observations remarkably well (see Fig. \ref{fig:seddep_all}), given our assumption  of isotropic saturation by an isothermal ideal gas, indicating that the distribution of trapped air in the bed was approximately uniform. The difference between our results and those presented by \citet{Michallet_etal2009} could be due to a combination of factors, including the differing grain sizes and distributions, proximity to a coastal structure, and/or proximity to the fixed minimum height of the water table, below which saturation $S$ might be assumed to be 1. In both cases, tidal range appears to be a key component influencing the presence of air in pore spaces.
+
+\subsection{Sensitivity to $k_c$ and Sediment Disturbance}\label{Disc:kc}
+
+The modeled pore pressure attenuation and phase were found to be most sensitive to the values of saturation, $S$, and the hydraulic conductivity, $k_{c}$, a result consistent with previous investigations. Varying $G$ within the range of realistic values for a sand-gravel mixture was found to have negligible effect on model output. The influence of $n$ and $\nu$ was also found to be negligible. The best-fit saturation values reported here, ranging from 0.85 to 0.90 with increasing water depth, are sensitive to the choice of $k_{c}$. Thus, any error associated with the variability of $k_{c}$ is also present in the estimation of $S$. It is well known \citep{Baird_etal1997, Horn_etal1998} that significant variability can occur in measured values of permeability for a given sample, owing to variations in particle arrangement and the degree of consolidation. The effect of varying $k_{c}$ on our $S$ estimate was approximately 10:1 in the neighbourhood of our best-fit solution. For example, to change the saturation value at the bed surface in 2 m water depth from 0.90 to 0.98 (a saturation estimate reported by \citet{Yamamoto_etal1978} for their laboratory experiments), $k_{c}$ must take on a value of $1.5\times 10^{-4}$  m s$^{-1}$, a decrease of 80\% from the measured, depth averaged value. As shown in Appendix A (equation (\ref{eq:A10})), it is true in general that an increase in $S$ must be coupled with a decrease in $k_c$ when the amplitude decay scale with sediment depth is fixed by the observations.
+
+Between yeardays 270 and 272, the relationship between pore pressure transmission properties and mean water depth changed markedly. For example, the pore pressure spectral ratio computed between signals recorded at 15 and 50 cm sediment depth, 0.1 Hz, and 2 m mean water depth, decreased from approximately 0.55 to 0.35, and the phase lag, $\theta$, was effectively doubled from approximately 15 to 30 degrees. We interpret this phase lag increase to be the result of wave-forced changes in the hydraulic conductivity, $k_{c}$, of the sediments surrounding the vertical array, in turn affecting the ability of the sediment to retain air (and thereby decrease the saturation). Decreasing $k_{c}$ increases the model-predicted values of both pore pressure attenuation and phase lag with sediment depth. As a limiting case (i.e., for fixed $S$, $k_{c}$ variable), for $S(z=0)$ fixed at 0.90, the observed doubling of phase lags can be accounted for in the model by decreasing $k_{c}$ from $7.6\times 10^{-4}$ to $1.9\times 10^{-4}$ m s$^{-1}$ -- a reduction of 75\%.
+
+Following the installment of the array in the beach, care was taken in refilling the instrument burial pit (with approximate diameter and depth of 0.75 m) to return sediments to the approximate depths from which they were removed, and compaction was attempted by foot-packing the reintroduced material surrounding the array. However, the disturbance of the sediment associated with burying the array led to a reduced level of compaction and increased hydraulic conductivity -- a state which persisted until the arrival of the first storm event of yearday 270. The preceding discussion suggests that wave action during the storm event reduced the hydraulic conductivity of sediments that had been shoveled back into the instrument burial pit, either by compaction or possibly through the settling/transport of fine-grained particles into pore spaces, thus decreasing the hydraulic conductivity. Before this point, we note that the pore pressure phase and attenuation properties appear consistent between tides, and, from our yearday 185 result (Fig. \ref{fig:S2}), there is little discernible difference in the best fit saturations during ebb tide compared to the immediately preceding flood. Thus, the hydrostatic pressure cycling associated with the tide alone, and the pore water infiltration/exfiltration cycling with the tide, appear to change neither the trapped air content, nor the permeability (via compaction) of the sediment significantly.
+
+Instrument burial has significant effects on pore pressure amplitude and phase. \citet{Bonjean_etal2004}, based on dynamic penetrometer resistance profiles at the same location for successive tides following instrument installation in a medium sand bed, concluded that a duration of two tides was sufficient to regain a level of sediment compaction similar to undisturbed sediment. It is apparent in the present case that the sediment remained loosely packed for much longer (seven tides, spanning four days, represented in Figs. \ref{fig:full_Hsig} and \ref{fig:delta_phase}), and that the mean hydrostatic pressure levels associated with the tides are largely irrelevant to the process. Thus, the effects of sediment disturbance due to instrument burial may persist for periods lasting days to weeks at this site, depending on wave conditions. Given these findings, it is likely that the observed spectral ratios on yearday 266 (Fig. \ref{fig:seddep_all}) prior to the first storm event, when all four sensors were operational, are overestimated, and the phase lags underestimated, relative to what might be considered a `typical' beach state.
+
+In addition to the large change in pore pressure transmission properties accompanying adjustment to the first wave event, restructuring of the sediment associated with subsequent wave events led to further variation in attenuation and phase properties, as shown by the correspondence between the significant wave height, $4\sigma_{p}$, and the magnitude of difference in phase lag between successive tides, $|\Delta\theta|$, in respective Figs. \ref{fig:delta_phase}a and c. However, unlike the first wave event, changes to pore pressure transmission did not persist in the cases of the subsequent wave events, but rather returned to the apparent equilibrium that prevailed from yearday 271 onward (e.g. Fig. \ref{fig:delta_phase}b). The magnitude of changes in attenuation and phase in these cases, along with the associated significant wave heights, were also smaller. During the second wave event, on yearday 274, the phase lag is observed to have decreased. Of the three wave events identified during the experiment (i.e., yeardays 270-271, 274, and 281), this is the only instance that a decrease in phase lag occurred, and may indicate that air was released from the sediments around the array due to disturbance of the beach surface by wave action, as \citet{Michallet_etal2009} inferred from their results. There was a positive change in the observed phase lag associated with the third wave event on yearday 281. However, the magnitude of change in this case was the smallest of the three events, and corresponded to the smallest significant wave heights.
+
+Variations in bed level at the array location were not quantified during the experiment, though the cross-shore low-tide bed profile was observed to be very stable, in general not changing by more than a few cm from tide to tide with respect to the visible uppermost array sensor. However, the subaqueous bed profile has been observed \citep{Hay_etal2014} to change during storm events with the emergence of wave orbital-scale ripples of $O(1$ m$)$ wavelength. The effects of varied bed level on the pore pressure response and model predictions have been investigated assuming a maximum bed level change of $\pm$5 cm. With parameter values set to be representative of Advocate Beach sediments and $S_0=0.90$, the predicted phase lag between sensors at $z=15$ cm and $z=50$ cm depth for incident waves of 0.1 Hz would be expected to change by $\pm$0.8 to 1.2\% in water depths of 0.1 to 2.1 m. This change is small, as expected, owing to the approximate linearity of phase lag with sediment depth. Similarly, the expected change in pressure variance ratio would be $\pm$7.8 to 10.5\% in 0.1 to 2.1 m water depth. A 5 cm change in bed level would be expected to alter our best fit $S$ estimate by $\pm$0.04 in 2.1 m water depth. Owing to the low energy wave conditions on yearday 266, it is expected that the variation in the bed elevation at the array location would have been negligible. 
+
+\subsection{Anisotropy}\label{Disc:Anisotropy}
+
+The model developed by \citet{Yamamoto_etal1978}, though shown in this and previous studies to accurately (relative RMSE $<$ 0.1, in this case) reflect observed values, does involve a number of simplifying assumptions. An important potential source of error is the assumption of isotropy of the medium. The depth dependent structure of porosity and hydraulic conductivity shown in Fig. \ref{fig:soilstats} clearly demonstrates that Advocate Beach sediments are anisotropic in the vertical. A more accurate assumption would be one of two-dimensional isotropy (i.e., to account for variations with depth alone). However, for the purposes of this study -- i.e., demonstrating the likelihood that the observed dependence of pore pressure amplitude and phase on sediment depth can be attributed to included air -- the assumption of isotropy and the use of depth-averaged soil parameter values are justified.
+
+Grain shape may also play an important role with respect to variable permeability in this setting. The characteristic sediment types at Advocate Beach include a dominant proportion of flat, oval-shaped shale grains, along with more spherical feldspar-based grains, particularly in the sand and fine gravel size fractions. \citet{Stark_etal2014} proposed that preferential arrangement of plate-like particles from the same study site led to the observed increase of internal friction angles. Preferential particle arrangement could contribute to the observed variations in hydraulic conductivity and porosity with sediment depth.
+
+Direct measurements of saturation have not been made. Video endoscopy allows the direct measurement of ``surfacic air content" -- i.e., the fractional surface area occupied by bubbles in a 2-d image. The relationship between surfacic air content and volumetric air content is nontrivial. In a first approximation, \citet{Breul_Gourves2008} estimated volumetric air content to be equivalent to one third of the surfacic air content using geometric arguments, and taking into account edge effects and the flattening of bubbles against the apparatus. Using this technique, \citet{Bonjean_etal2004} observed a sediment depth-dependent distribution of surfacic air content with a maximum of 6\% observed near 25 cm sediment depth in medium sand. \citet{Breul_Gourves2008} reported similarly shaped distributions with a maximum surfacic air content of 16\% using the same apparatus, in the same location, at different times. The direct observation of pore-trapped gas in such quantities, considered in tandem with the large tidal range at Advocate Beach (and the associated twice daily drainage of water from, and concurrent re-aeration of, the beach face sediments), lends justification to the values reported here.
+
+
+\subsection{Hydraulic Conductivity vs. Saturation and Water Depth}\label{dsdh}
+
+\begin{figure} % plot_bestfit_Sr_PorePressureJGR.m
+		\begin{center}	
+		\noindent\includegraphics[width=6.9cm]{figures/chapter1/2016JC012257_p16.png}
+	%	\noindent\includegraphics[width=20pc]{Saturation_185_266.eps}
+	\caption[Best-fit saturation values: variable hydraulic conductivity]{Best-fit model-predicted estimates of the saturation $S_0$ at $z$ = 0 versus water depth $h$ for fixed $k_c$ = $k_{c1}$ (blue), the measured, depth-averaged value, with an uncertainty region computed using $k_{c1}$ $\pm$ 1 standard deviation, and variable $k_c$ = $k_{c}(h)$ (red). Linear regressions are shown in black. The range of $S_0$ estimates made using $k_c(h)$ is in agreement with the prediction made assuming hydrostatic compression of an isothermal ideal gas. The available data are limited to flood tide of yearday 266. The data points are 12 min apart.} 
+	\label{fig:S3}
+		\end{center}
+\end{figure}
+
+The slope, d$S$/d$h$, in Fig. \ref{fig:S}, is 0.007 m$^{-1}$ for $k_{c2}$ and 0.034 m$^{-1}$ for $k_{c1}$, both less than the respective predictions of 0.003 m$^{-1}$ and 0.016 m$^{-1}$ based on hydrostatic compression of free air. The discrepancy persists regardless of the choice of $k_c$. The best-fit and predicted slopes can be brought into agreement only when the $k_c$ estimate is allowed to vary with $h$. In Fig. \ref{fig:S3}, the best-fit values, $S_{0}$, for $k_c$ set as the measured, depth-averaged value ($k_{c1}$, as shown in Fig. \ref{fig:S}) are compared with $S_0$ estimates for $k_c$ values that increase with increasing $h$. For this case, the initial $k_c$ value (corresponding to a mean water depth of 0.145 m) was set as $k_{c1}$, then increased in proportion to the change in $h$, giving the relation 
+
+\begin{equation}\label{eq:kch}
+k_c(h) = A k_{c1}h + B,
+\end{equation}
+
+\noindent with $A$ = 1/5 and $B$ = 7.33$\times$10$^{-4}$, for a total increase in $k_c$ of 39\% over the observed range of $h$. The slope of a linear regression of the associated best-fit $S_0$ values with mean water depth is in agreement with the prediction made on the basis of hydrostatic compression of free air in this case. Combining equation (\ref{eq:kch}) with the equation of the linear regression yields an equation for $k_c(S)$ which is linear, with $k_c$ values that increase with increasing $S$. The dependence of hydraulic conductivity on soil saturation is well documented in the soil mechanics literature, and closed form solutions have been obtained: e.g., \citet{vanGenuchten1980} equation (8), designated vG8 here. Although vG8 is highly nonlinear, the predicted relationship is consistent with the sign and magnitude of change in $k_c$ with $S$ for the range of values of $S$ in Fig. \ref{fig:S3}. However, because the vG8 relation involves an exponent which must be determined empirically, and depends upon the residual saturation -- which we did not measure -- a quantitative comparison to the van Genuchten model is not carried out here.
+
+In physical terms, an increase in $k_c$ with increasing water depth can be attributed to a reduction in trapped air volume because of the higher hydrostatic pressure, and therefore an increase in the pore space available for water to flow.
+
+
+\section{Summary and Conclusions}\label{ch1:Conclusions}
+
+New observations have been presented of the vertical structure of pore pressure phase and attenuation in the surface gravity wave band on a natural, megatidal, mixed sand-gravel-cobble beach. The data indicate significant attenuation and phase shifting within the upper 50 cm of the sediment column.
+
+The observations are compared to the analytic poro-elastic bed response model formulated by \citet{Yamamoto_etal1978}. Good agreement (relative RMSE less than 10\%) is obtained between observed and modeled pressure phase and attenuation profiles versus sediment burial depth and forcing frequency. Consistent with the existing literature, the predictions are most sensitive to the effective compressibility of the pore fluid $\beta'$ -- determined by the degree of pore-fluid saturation $S$ -- and (though to a lesser degree) the hydraulic conductivity $k_{c}$. In order to reproduce the observed phase lag between the pore pressure at depth within the sediment and the pressure at the sediment-water interface, it was necessary to adjust the value of $S$, i.e., to include interstitial trapped air. Using the observed values of $k_c$ -- measured in the laboratory using (highly disturbed) samples of the beach face sediments -- best-fit saturation values ranged from 85\% to 90\% depending on water depth. The model/data comparison indicates that oscillatory pore pressures at frequencies of 0.1 Hz and higher were confined to sediment depths less than \textit{ca}. 1 m.
+
+Pore pressure phase-shifting and attenuation are both found to be pronounced over the 0.5 m sediment depth range of the buried sensors. Observed values were sensitive to tidal changes in mean water depth $h$, with phase shifting and attenuation decreasing as $h$ increased, qualitatively consistent with reduced volume of entrapped air in response to increased absolute ambient pressure. Agreement between changes in best-fit saturation values with water depth and changes predicted by isothermal ideal gas compression are in quantitative agreement only when the hydraulic conductivity is allowed to increase with increasing water depth.
+
+Sensitivity to redistribution of beach material within the upper 50 cm of the sediment column by wave action is strongly indicated. The largest changes occurred with the onset of the first storm event, following a five day period of calm conditions. It is suggested that the limited wind and wave activity following instrument burial was insufficient to reconsolidate the beach material to a typical state, resulting in increased hydraulic conductivity, and decreased phase-shifting and attenuation of pore pressure signals. Additional, though less pronounced, variability was observed during later energetic wave events.
+
+The following conclusions are drawn: (1) Pore-trapped air plays a key role in the dynamics of pressure transmission through the sediment column at Advocate Beach. (2) Changes in pore pressure transmission properties are driven by changes in the hydraulic conductivity of the beach face sediments associated with energetic wave events. (3) Hydrostatic pressure alone does not serve to restore disturbed steep beach sediments to equilibrium, at least not on time scales of \textit{ca}. 1 week. Disturbance of beach material associated with instrument burial can therefore affect measured pore pressure values on time scales of days to weeks in the absence of energetic wave events. (4) Rapid attenuation attributed to the presence of pore-trapped air limits the effects of cyclic pressure loading by wave action to a region near the bed surface. (5) Symmetry of best-fit saturation estimates (in one case) and of phase estimates (in general) about high tide, indicates that air escapement did not generally occur between 15 cm and 50 cm sediment depth, over a tidal cycle. (6) Because of the presence of trapped air, the associated phase shift, and the possible changes in burial depth associated with active transport conditions, buried pressure sensors deployed in the intertidal zone of MSG beaches for the purpose of wave measurement should be ported to the sediment-water interface. Otherwise, multi-sensor, coherent vertical arrays are required to remove the effects of the sediment on the pressure signal, and therefore infer the kinematic properties of surface gravity waves on MSG beaches. 
+
+Future work could attempt to draw a connection between depths of beach disturbance by wave action and pore-pressure profiles, and examine the effects of particle shape, and (vertical) anisotropy of sediment properties. While including the effect of air bubbles on the bulk compressibility of the sediment column does bring the data and model predictions into satisfactory agreement, $O(10$\%$)$ by volume of air is required. It seems likely that such high concentrations of included air should influence infiltration/exfiltration processes and sediment stability at Advocate Beach. Similar investigations at other steep mixed sand and gravel beach sites with high tidal ranges would therefore be of interest.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

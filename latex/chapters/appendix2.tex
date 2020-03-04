@@ -1,0 +1,64 @@
+\chapter{\label{a:A2}Digital grain sizing validation}
+
+The \citet{Buscombe2013} digital grain sizing (DGS) method used in Chapters \ref{Chapter:MSDBeach} and \ref{Chapter:MSDSwash} applies wavelet analysis to space-series transects of greyscale pixel intensities in the image(s) being processed. For the algorithm to function as intended, the images must contain only sediment, and individual grains must be resolvable by eye (i.e., have minimum grain diameters of 3-4 pixels). The output is a distribution of grain diameters characterised by information from the wavelet-derived power spectrum, i.e., using a statistical characterisation of each pixel transect, rather than characterisations of individual grains. Unlike earlier statistical methods, the \citet{Buscombe2013} method does not require a site- or sediment population-specific calibration. The method is therefore described as `transferable'. In comparison to earlier methods, the transferable wavelet method is more applicable to poorly sorted sediment populations.
+
+The DGS method requires a suite of input parameters: (1) a density parameter, which determines the spacing between pixel rows in the input image to be processed; (2) a pixel to physical unit scale factor; (3) a filtering boolean, which applies a Savitzki-Golay high-pass `flattening' filter if set to `True'; (4) a `notes' parameter, which defines the number of notes per octave to consider in the continuous wavelet transform; (5) an inverse pixel-to-frame-width ratio indicating the maximum diameter of grains to be resolved, in order to scale the maximum width of the `mother' Morlet wavelet; and (6) a conversion constant required to enable comparability of the output with distributions obtained in a different dimensional space. See \citet{Buscombe2013} or \citet{Cuttler_etal2017} for more detailed summaries of the parameters. With the exception of the pixel to physical unit scaling parameter, the pixel-to-frame-width ratio, and the dimensional conversion constant, the default parameter values were used in processing all images.
+
+A validation analysis was carried out to ensure the most suitable parameter values were selected. Twenty-four surface sediment samples taken from the beach were transported to the laboratory, where grain size distributions were computed by sieving, a manual image-based point-counting approach, and the wavelet-based DGS method. The mean sample mass was 1.28 kg. The samples were prepared and sieved following the method of \citet{Ingram1971} to obtain volume-by-weight grain size distributions. The point counting method is a standard validation technique for image-based grain sizing, in which an $n\times m$ uniformly spaced grid ($9\times 9$, in the case of this study) is overlaid on the image, and the widths of the grains beneath each grid vertex manually extracted to produce a grid-by-number type grain size distribution \citep[e.g.,][]{Barnard_etal2007, Buscombe_etal2010}. 
+
+To implement the point-counting and wavelet methods, each sample was placed in a tray and photographed using a tripod-mounted, downward-oriented Canon Powershot Elph 190, i.e., the same setup used for the survey photography in Chapter \ref{Chapter:MSDBeach}. 3-5 images were captured for each sample, with the sediments being redistributed between each photograph. Each photograph was cropped so only sediment was visible in the image. The cropped images were digitally flatted in the process of implementing the DGS algorithm.
+
+Since the output of the DGS algorithm is a distribution of line-by-number grain diameters (see \citet{Kellerhals_Bray1971, Church_etal1987} for descriptions of the types particle size distributions), a conversion factor is needed in order for the DGS output to be comparable to (i.e., dimensionally consistent with) output from a sieve-type analysis. A commonly used conversion formula is \citep[e.g.][]{Kellerhals_Bray1971, Diplas_Sutherland1988, Cuttler_etal2017}:
+
+\begin{equation}\label{eq:surface_area_to_volume}
+p_{2,i} = \frac{p_{1,i} D_{i}^{x}}{\Sigma p_{1,i} D_{i}^{x}},
+\end{equation}
+
+\noindent where $p_{1,i}$ is the known proportion of the $i$th size fraction obtained using the input measure, $p_{2,i}$ is the proportion of the $i$th size fraction in units consistent with the desired output measure, $D_i$ is the grain diameter of the $i$th size fraction, and the exponent $x$ is a conversion constant whose value is empirically dependent upon the grain size distribution. Eq. (\ref{eq:surface_area_to_volume}) is based on the voidless cube model from \citet{Kellerhals_Bray1971}, which assumes a porosity of zero. The \citeauthor{Kellerhals_Bray1971} conversion is based on purely dimensional arguments, and does not depend upon an idealisation of the material. Thus, though the parameter $x$ can be theoretically defined based only on knowledge of the input and output measures, it is best employed as an empirically defined tuning parameter. For example, \citet{Diplas_Sutherland1988} suggested a value of $x=-0.47$ for converting from an area-by-number to volume-by-number type sample using natural sediments with 33\% porosity, though the voidless cube model would indicate a conversion constant of $x=-1$. Theoretically correct values of $x$ for a given conversion can be found in Table 2 of \citet{Kellerhals_Bray1971}. The same exponent values can be deduced using dimensional arguments. For example, converting from a grid-by-number type measure ($O(D^0)/O(D^0)$) to a volume-by-number measure ($O(D^3)/O(D^0)$) requires a conversion factor of 
+
+\begin{equation}\label{eq:order_balance}
+\frac{O(D^0)/O(D^0)}{O(D^3)/O(D^0)} = O(D^{-3}).
+\end{equation} 
+
+For the output from the wavelet method to be theoretically comparable to output from the sieve analysis, a conversion factor of $O(D^1)$ is required. Note that the same conversion is used for comparing output from the wavelet method to output from the manual point counting method, since the sieve method (volume-by-weight) and the point counting method (grid-by-number) share an $O(D^0)$ equivalence. 
+
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figures/appendix2/DGS_sieve_validation.png}
+	\caption[Mean grain size and sorting: wavelet method versus sieve]{Mean grain sizes (left) and sorting parameters (right) computed using the wavelet-based DGS method, plotted against values obtained from sieve analysis, for values of the dimensional scaling parameter $x$ ranging from 0.5 to 1.5. \label{fig:validation_sieve}}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figures/appendix2/DGS_ptcount_validation.png}
+	\caption[Mean grain size and sorting: wavelet method versus manual point count]{Mean grain sizes (left) and sorting parameters (right) computed using the wavelet-based DGS method, plotted against values obtained using the manual point counting method, for values of the dimensional scaling parameter $x$ ranging from 0.5 to 1.5. \label{fig:validation_ptcount}}
+\end{figure}
+
+For the validation analysis, $x$ values in the range of 0.5 through 1.5 were tested. RMS errors associated with all the $x$ values tested are summarized in Table \ref{table:rmse}, and results for a subset of the values are plotted in Figs. \ref{fig:validation_sieve} and \ref{fig:validation_ptcount} for the sieve and point count method comparisons, respectively. The best result in a minimised root mean square error sense was obtained using $x=0.8$ (RMSE=3.35 mm). Though the higher values for $x$ arguably lead to a more linear (though positively offset) relationship (see $x=1.5$ in Fig. \ref{fig:validation_sieve}), this comes at the expense of the ability to differentiate grain sizes in the low- to mid range -- i.e., the 10-20 mm mean grain size range -- which accounts for a large proportion of the grain size distribution. %  (see Fig. \ref{fig:bulk_grainsize})
+
+\begin{table}[tbp!]
+	\caption[RMS errors: mean grain size data from wavelet method and sieve]{Root mean square errors (RMSE) of the DGS and sieve-derived mean grain size data for the validation analysis.} 
+	\label{table:rmse}
+	\centering
+	\begin{tabular}{ccc}
+		\hline
+		$x$ & DGS-sieve RMSE (mm) & DGS-point count RMSE (mm)\\
+		\hline
+		0.5 & 4.11 & 4.63\\
+		0.7 & 3.43 & 4.36\\
+		0.8 & 3.35 & 4.39\\
+		0.9 & 3.48 & 4.55\\
+		1.0 & 3.81 & 4.83\\
+		1.2 & 4.90 & 5.71\\
+		1.3 & 5.71 & 6.27\\
+		1.5 & 7.08 & 7.56\\
+	\end{tabular}
+\end{table}
+
+%The maximum feature scale was maintained at a value of 56 mm.
+
+Other parameter values were held constant. The inverse pixel-to-frame-width ratio was set as 5.3, for a maximum resolved feature scale of 56 mm, given a cropped image frame with of 2453 pixels, and a pixel to metric scaling parameter value of 0.12. The inverse pixel-to-frame-width ratio of 5.3 was chosen so the maximum feature scale was consistent with the scale used to process the field survey images, which were cropped to different dimensions. Though this feature scale was not sufficient to resolve the largest grains in the distribution, it was deemed an acceptable compromise in the interest of optimising the representation of both the small and large diameter grains.
+
+Though an acceptable level of agreement was obtained between the mean grain sizes computed using the DGS method and the validation methods, higher order moments of the grain size distribution, namely, the grain size sorting parameter (i.e., the standard deviation of the grain size distribution), the grain size skewness, and the kurtosis, were not reproduced with the same quality. This was attributed to the broad and variable grain size distribution within a given image, and throughout the image set. Consequently, the measures of grain size other than the mean were omitted from any analyses.
+
+%The same set of parameter values was used for all the images processed in the validation analysis. It is possible that a better fit could have been achieved by dynamically assigning parameter values, namely the maximum feature scale and dimensional conversion parameters, based on the distribution of grains in the image.  
+
+
